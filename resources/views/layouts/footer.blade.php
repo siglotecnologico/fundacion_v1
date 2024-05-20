@@ -42,7 +42,7 @@
                         <div class="footer-widget__single">
                             <div class="footer-widget__single-about">
                                 <div class="logo-box">
-                                    <a href="#"><img src="assets/images/resources/logo-2.png"
+                                    <a href="#"><img src="assets/images/resources/origin.jpeg"
                                             alt="#"></a>
                                 </div>
 
@@ -78,7 +78,7 @@
                                         </div>
 
                                         <div class="content-box">
-                                            <p>101 Merritt 5, torre norte <br> 14851 Nueva York, EE. UU.</p>
+                                            <p>Urdesa Central, Mz 12, S 20 <br> Guayaquil, Ecuador</p>
                                         </div>
                                     </div>
                                 </li>
@@ -93,8 +93,8 @@
                                         </div>
 
                                         <div class="content-box">
-                                            <p><a href="#">02 92 92 16 215</a></p>
-                                            <p><a href="#">+088 11 22 00 77</a></p>
+                                            <p><a href="#">+593 99 841 9115</a></p>
+                                            <p><a href="#">+593 99 841 9115</a></p>
                                         </div>
                                     </div>
                                 </li>
@@ -181,7 +181,7 @@
                 </div>
 
                 <div class="copyright">
-                    <p>©2024 <a href="#">Siglo Tecnológico</a> Todos los derechos reservados</p>
+                    <p>©2024 <a href="siglotecnologico.com">Siglo Tecnológico</a> Todos los derechos reservados</p>
                 </div>
             </div>
         </div>

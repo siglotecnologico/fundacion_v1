@@ -58,7 +58,7 @@
                         <h3>¡Puedes marcar la diferencia hoy!</h3>
                     </div>
                     <div class="btn-box">
-                        <a href="donation.html">Donación</a>
+                        <a href="#">Donación</a>
                     </div>
                 </div>
             </div>
