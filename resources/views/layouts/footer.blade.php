@@ -103,7 +103,7 @@
                     </div>
                     <!--Fin del Widget de Footer Single Derecho-->
 
-                    <!--Inicio del Widget de Footer Single Derecho-->
+                    <!--Inicio del Widget de Footer Single Derecho
                     <div class="col-xl-2 col-lg-6 col-md-6 wow animated fadeInUp" data-wow-delay="0.3s">
                         <div class="footer-one__single footer-one__single-explore">
                             <div class="title">
@@ -121,7 +121,7 @@
                             </ul>
 
                         </div>
-                    </div>
+                    </div>-->
                     <!--Fin del Widget de Footer Single Derecho-->
 
                     <!--Inicio del Widget de Footer Single Derecho-->

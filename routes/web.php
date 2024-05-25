@@ -19,11 +19,11 @@ Route::get('/', function () {
 
 Route::get('about', function () {
     return view('about');
-});
+})->name('about');
 
 Route::get('contactos', function () {
     return view('contactos');
-});
+})->name('contactos');
 
 Route::middleware([
     'auth:sanctum',

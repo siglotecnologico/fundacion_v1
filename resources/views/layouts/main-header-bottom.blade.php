@@ -4,18 +4,15 @@
             <div class="main-menu__wrapper clearfix">
                 <div class="container">
                     <div class="main-menu__wrapper-inner">
-
                         <div class="main-header-one__bottom-left">
                             <div class="main-menu-box">
-                                <a href="{{ route('inicio') }}" class="mobile-nav__toggler">
-
+                                <a href="#" class="mobile-nav__toggler">
                                     <i class="fa fa-bars"></i>
                                 </a>
 
                                 <ul class="main-menu__list">
-                                    <li class="dropdown current">
-                                        <a href="{{ route('inicio') }}">
-                                            Inicio</a>
+                                    <li class="current">
+                                        <a href="{{ route('inicio') }}"> Inicio</a>
                                     </li>
 
                                     <li>
@@ -38,7 +35,7 @@
                                     <li class="dropdown">
                                         {{--<a href="#">Blog</a>--}}
                                     <li>
-                                        <a href="contactos">Contacto</a>
+                                        <a href="{{ route('contactos') }}"  >Contacto</a>
                                     </li>
                                 </ul>
                             </div>
