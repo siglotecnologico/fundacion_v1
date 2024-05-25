@@ -7,20 +7,22 @@
 
                         <div class="main-header-one__bottom-left">
                             <div class="main-menu-box">
-                                <a href="#" class="mobile-nav__toggler">
+                                <a href="{{ route('inicio') }}" class="mobile-nav__toggler">
+
                                     <i class="fa fa-bars"></i>
                                 </a>
 
                                 <ul class="main-menu__list">
                                     <li class="dropdown current">
-                                        <a href="#">Inicio</a>
+                                        <a href="{{ route('inicio') }}">
+                                            Inicio</a>
                                     </li>
 
                                     <li>
-                                        <a href="#">Acerca de</a>
+                                        <a href="about">Acerca de</a>
                                     </li>
 
-                                    <li class="dropdown">
+                                  {{--   <li class="dropdown">
                                         <a href="#">Donaciones</a>
                                         <ul>
                                             <li><a href="#">Donación</a></li>
@@ -29,35 +31,15 @@
                                             <li><a href="#">Detalles de Donación</a>
                                             </li>
                                         </ul>
-                                    </li>
+                                    </li> --}}
 
-                                    <li class="dropdown">
-                                        <a href="#">Eventos</a>
-                                        <ul>
-                                            <li><a href="#">Eventos</a></li>
-                                            <li><a href="#">Detalles de Eventos</a></li>
-                                        </ul>
-                                    </li>
 
-                                    <li class="dropdown">
-                                        <a href="#">Páginas</a>
-                                        <ul>
-                                            <li><a href="#">Voluntarios 01</a></li>
-                                            <li><a href="#">Voluntario 02</a></li>
-                                            <li><a href="#">Portafolio</a></li>
-                                            <li><a href="#">Preguntas Frecuentes</a>
-                                            <li><a href="#">Tienda</a></li>
-                                            <li><a href="#">Detalles de la Tienda</a></li>
-                                            <li><a href="#">Carrito</a></li>
-                                            <li><a href="#">Pagar</a></li>
-                                        </ul>
-                                    </li>
-
+{{--
                                     <li class="dropdown">
                                         <a href="#">Blog</a>
                                     <li>
-                                        <a href="#">Contacto</a>
-                                    </li>
+                                        <a href="contactos">Contacto</a>
+                                    </li> --}}
                                 </ul>
                             </div>
                         </div>

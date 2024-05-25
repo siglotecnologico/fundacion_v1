@@ -15,6 +15,14 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('dashboard');
+})->name('inicio');
+
+Route::get('about', function () {
+    return view('about');
+});
+
+Route::get('contactos', function () {
+    return view('contactos');
 });
 
 Route::middleware([
