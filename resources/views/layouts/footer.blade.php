@@ -181,7 +181,7 @@
                 </div>
 
                 <div class="copyright">
-                    <p>©2024 <a href="siglotecnologico.com">Siglo Tecnológico</a> Todos los derechos reservados</p>
+                    <p>©2024 <a href="https://siglotecnologico.com/">Siglo Tecnológico</a> Todos los derechos reservados</p>
                 </div>
             </div>
         </div>
