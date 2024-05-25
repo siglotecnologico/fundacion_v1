@@ -19,7 +19,7 @@
                                     </li>
 
                                     <li>
-                                        <a href="about">Acerca de</a>
+                                        <a href="about">Sobre Nosotros</a>
                                     </li>
 
                                   {{--   <li class="dropdown">
@@ -34,12 +34,12 @@
                                     </li> --}}
 
 
-{{--
+
                                     <li class="dropdown">
-                                        <a href="#">Blog</a>
+                                        {{--<a href="#">Blog</a>--}}
                                     <li>
                                         <a href="contactos">Contacto</a>
-                                    </li> --}}
+                                    </li>
                                 </ul>
                             </div>
                         </div>
