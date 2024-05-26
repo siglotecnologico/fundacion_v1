@@ -25,6 +25,11 @@ Route::get('contactos', function () {
     return view('contactos');
 })->name('contactos');
 
+Route::get('donaciones', function () {
+    return view('donaciones');
+})->name('donaciones');
+
+
 Route::middleware([
     'auth:sanctum',
     config('jetstream.auth_session'),

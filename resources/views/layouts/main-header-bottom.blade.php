@@ -16,7 +16,10 @@
                                     </li>
 
                                     <li>
-                                        <a href="about">Sobre Nosotros</a>
+                                        <a href="{{ route('about') }}">Sobre Nosotros</a>
+                                    </li>
+                                    <li>
+                                        <a href="{{ route('donaciones') }}">Donaciones</a>
                                     </li>
 
                                   {{--   <li class="dropdown">
