@@ -13253,6 +13253,14 @@ Cart Page
   background: var(--gifall-black);
 }
 
+#loading-spinner {
+    display: none;
+    font-size: 14px;
+    color: #ffffff;
+    margin-top: 10px;
+}
+
+
 
 
 

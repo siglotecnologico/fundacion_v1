@@ -53,10 +53,10 @@
                                 <a href="#">Voluntario</a>
                             </div>
 
-                            <div class="header-search-box">
+                           {{--  <div class="header-search-box">
                                 <a href="#" class="main-menu__search search-toggler icon-search">
                                 </a>
-                            </div>
+                            </div> --}}
 
                         </div>
                     </div>

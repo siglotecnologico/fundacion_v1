@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Controllers\Formularios\ContactoController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -39,3 +39,10 @@ Route::middleware([
         return view('dashboard');
     })->name('dashboard');
 });
+
+
+
+Route::post('/formularioContacto', [ContactoController::class, 'store'])->name('contacto.store');
+Route::post('/formularioContactoinfo', [ContactoController::class, 'contactoinfo'])->name('contactoinfo.store');
+Route::post('/formulariosuscripcion', [ContactoController::class, 'suscripcion'])->name('suscripcion.store');
+

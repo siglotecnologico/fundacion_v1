@@ -260,7 +260,7 @@
                                 <div class="img-box"><img src="assets/images/shapes/counter-v1-shape1.png"
                                         alt="#"></div>
                                 <div class="text-box">
-                                    <h2><span class="odometer" data-count="120">00</span>+</h2>
+                                    <h2><span class="odometer" data-count="10">00</span>+</h2>
                                 </div>
                             </div>
                             <div class="counter-one__single-bottom">
@@ -277,7 +277,7 @@
                                 <div class="img-box"><img src="assets/images/shapes/counter-v1-shape2.png"
                                         alt="#"></div>
                                 <div class="text-box">
-                                    <h2> <span class="dollar">$</span> <span class="odometer" data-count="5">00</span>
+                                    <h2> <span class="dollar">$</span> <span class="odometer" data-count="1">00</span>
                                         <span class="m">M</span>
                                     </h2>
                                 </div>
@@ -296,7 +296,7 @@
                                 <div class="img-box"><img src="assets/images/shapes/counter-v1-shape3.png"
                                         alt="#"></div>
                                 <div class="text-box">
-                                    <h2><span class="odometer" data-count="10">00</span>k</h2>
+                                    <h2><span class="odometer" data-count="1">00</span>k</h2>
                                 </div>
                             </div>
                             <div class="counter-one__single-bottom">
@@ -404,7 +404,7 @@
                                     <span class="icon-charity"></span>
                                 </div>
                                 <div class="text-box">
-                                    <h2><span class="dollar">$</span> <span class="odometer" data-count="15224">00</span>
+                                    <h2><span class="dollar">$</span> <span class="odometer" data-count="1">00</span>
                                         <span class="plus">+</span>
                                     </h2>
                                     <p>Desde 2023 Donaciones</p>

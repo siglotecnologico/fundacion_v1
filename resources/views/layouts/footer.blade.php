@@ -19,17 +19,22 @@
 
                     <div class="col-xl-7">
                         <div class="footer-one__top-form">
-                            <form class="subscribe-form" action="#">
+                            <form id="subscribe-form" class="subscribe-form" action="{{ route('suscripcion.store') }}"
+                                method="post">
+                                @csrf
                                 <div class="input-box">
                                     <input type="email" name="email" placeholder="Dirección de correo electrónico">
                                 </div>
-                                <button type="submit">
+                                <button id="submit-button" type="submit">
                                     <span class="text">Suscribirse</span>
                                     <i class="icon-send-message"></i>
                                 </button>
+                                <div id="loading-spinner" style="display: none;">Enviando...</div>
                             </form>
                         </div>
+                        <div id="form-messages"></div>
                     </div>
+
                 </div>
             </div>
 
@@ -42,19 +47,19 @@
                         <div class="footer-widget__single">
                             <div class="footer-widget__single-about">
                                 <div class="logo-box">
-                                    <a href="#"><img src="assets/images/resources/origin.jpeg"
-                                            alt="#"></a>
+                                    <a href="#"><img src="assets/images/resources/3.png" alt="#"></a>
                                 </div>
 
                                 <div class="footer-widget__single-about-text">
-                                    <p>Nuestra organización de caridad se dedica a mejorar la vida de aquellos que más lo necesitan. Únete a nosotros hoy mismo.</p>
+                                    <p>Nuestra organización de caridad se dedica a mejorar la vida de aquellos que más
+                                        lo necesitan. Únete a nosotros hoy mismo.</p>
                                 </div>
 
-                                <div class="footer-widget__single-about-btn">
+                              {{--   <div class="footer-widget__single-about-btn">
                                     <a class="thm-btn" href="#">
                                         <span class="txt">Únete Ahora</span>
                                     </a>
-                                </div>
+                                </div> --}}
                             </div>
                         </div>
                     </div>
@@ -101,7 +106,7 @@
                             </ul>
                         </div>
                     </div>
-                    
+
                     <!--Fin del Widget de Footer Single Derecho-->
 
                     <!--Inicio del Widget de Footer Single Derecho
@@ -167,11 +172,11 @@
         <div class="container">
             <div class="bottom-inner">
 
-                <div class="footer-one__bottom-left">
+                {{-- <div class="footer-one__bottom-left">
                     <div class="title-box">
                         <h4>Síguenos en Redes Sociales</h4>
                     </div>
-                    <div                     class="social-links">
+                    <div class="social-links">
                         <ul>
                             <li><a href="#"><span class="icon-facebook-logo"></span></a></li>
                             <li><a href="#"><span class="icon-twitter"></span></a></li>
@@ -179,10 +184,11 @@
                             <li><a href="#"><span class="icon-instagram"></span></a></li>
                         </ul>
                     </div>
-                </div>
+                </div> --}}
 
                 <div class="copyright">
-                    <p>©2024 <a href="https://siglotecnologico.com/">Siglo Tecnológico</a> Todos los derechos reservados</p>
+                    <p>©2024 <a href="https://siglotecnologico.com/">Siglo Tecnológico</a> Todos los derechos
+                        reservados</p>
                 </div>
             </div>
         </div>
@@ -190,4 +196,47 @@
 
 </footer>
 <!--Fin del Footer One-->
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const form = document.getElementById('subscribe-form');
+        const submitButton = document.getElementById('submit-button');
+        const loadingSpinner = document.getElementById('loading-spinner');
+
+        form.addEventListener('submit', function(event) {
+            event.preventDefault();
+
+            // Deshabilitar el botón de envío y mostrar el spinner
+            submitButton.disabled = true;
+            loadingSpinner.style.display = 'block';
+
+            const formData = new FormData(form);
+            const xhr = new XMLHttpRequest();
+            xhr.open('POST', form.action, true);
+            xhr.setRequestHeader('X-Requested-With', 'XMLHttpRequest');
+
+            xhr.onload = function() {
+                // Habilitar el botón de envío y ocultar el spinner
+                submitButton.disabled = false;
+                loadingSpinner.style.display = 'none';
+
+                const response = JSON.parse(xhr.responseText);
+                const formMessages = document.getElementById('form-messages');
+
+                if (xhr.status === 200) {
+                    formMessages.innerHTML = `<div class="alert alert-success">${response.message}</div>`;
+                    form.reset();
+                } else {
+                    let errorsHtml = '<div class="alert alert-danger"><ul>';
+                    for (let error of response.errors) {
+                        errorsHtml += `<li>${error}</li>`;
+                    }
+                    errorsHtml += '</ul></div>';
+                    formMessages.innerHTML = errorsHtml;
+                }
+            };
+
+            xhr.send(formData);
+        });
+    });
+    </script>
 
