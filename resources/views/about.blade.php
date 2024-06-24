@@ -27,7 +27,7 @@
                             </div>
 
                             <div class="feature-one__single-content">
-                                <h2><a href="#">Amistoso con el Donante</a></h2>
+                                <h2>Amistoso con el Donante</h2>
                                 <p>Nuestra fundación se dedica a crear experiencias positivas y transparentes para todos
                                     nuestros donantes.</p>
                             </div>
@@ -46,7 +46,7 @@
                             </div>
 
                             <div class="feature-one__single-content">
-                                <h2><a href="#">Atención Médica</a></h2>
+                                <h2>Atención Médica</h2>
                                 <p>Proveemos acceso a servicios médicos esenciales para las comunidades desfavorecidas en
                                     Ecuador, mejorando la salud y el bienestar.</p>
                             </div>
@@ -65,7 +65,7 @@
                             </div>
 
                             <div class="feature-one__single-content">
-                                <h2><a href="#">Alimentos Saludables</a></h2>
+                                <h2>Alimentos Saludables</h2>
                                 <p>Distribuimos alimentos nutritivos a personas necesitadas, asegurando acceso a una dieta
                                     equilibrada y saludable.</p>
                             </div>
@@ -84,7 +84,7 @@
                             </div>
 
                             <div class="feature-one__single-content">
-                                <h2><a href="#">Educación</a></h2>
+                                <h2>Educación</h2>
                                 <p>Fomentamos la educación en las comunidades, proporcionando recursos y apoyo para el
                                     desarrollo académico y personal.</p>
                             </div>
@@ -95,8 +95,6 @@
             </div>
         </section>
         <!--End Feature One -->
-
-
 
         <!--Start About Two -->
         <section class="about-two about-two--about">
@@ -232,84 +230,14 @@
                             </div>
 
                             <div class="text-box">
-                                <h2>Desde 2020, hemos otorgado más de <br> 20,000 deseos en todo el mundo.</h2>
+                                <h2>Desde 2020, hemos otorgado más de <br> 1200 deseos en todo el mundo.</h2>
                             </div>
-                        </div>
-
-                        <div class="about-one__bottom-btn">
-                            <a class="thm-btn" href="#">
-                                <span class="txt">Conoce Sobre Nosotros</span>
-                            </a>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
         <!--End About Two -->
-
-
-        <!--Start Counter One -->
-        <section class="counter-one counter-one--two">
-            <div class="shape1 float-bob-y"><img src="assets/images/shapes/counter-v1-shape4.png" alt="#"></div>
-            <div class="container">
-                <div class="row">
-                    <!--Start Counter One Single-->
-                    <div class="col-xl-4 col-lg-4 wow animated fadeInUp" data-wow-delay="0.1s">
-                        <div class="counter-one__single">
-                            <div class="counter-one__single-top">
-                                <div class="img-box"><img src="assets/images/shapes/counter-v1-shape1.png"
-                                        alt="#"></div>
-                                <div class="text-box">
-                                    <h2><span class="odometer" data-count="10">00</span>+</h2>
-                                </div>
-                            </div>
-                            <div class="counter-one__single-bottom">
-                                <p>Organizaciones Registradas Apoyadas</p>
-                            </div>
-                        </div>
-                    </div>
-                    <!--End Counter One Single-->
-
-                    <!--Start Counter One Single-->
-                    <div class="col-xl-4 col-lg-4 wow animated fadeInUp" data-wow-delay="0.2s">
-                        <div class="counter-one__single">
-                            <div class="counter-one__single-top">
-                                <div class="img-box"><img src="assets/images/shapes/counter-v1-shape2.png"
-                                        alt="#"></div>
-                                <div class="text-box">
-                                    <h2> <span class="dollar">$</span> <span class="odometer" data-count="1">00</span>
-                                        <span class="m">M</span>
-                                    </h2>
-                                </div>
-                            </div>
-                            <div class="counter-one__single-bottom">
-                                <p>Fondos Recaudados para Caridades</p>
-                            </div>
-                        </div>
-                    </div>
-                    <!--End Counter One Single-->
-
-                    <!--Start Counter One Single-->
-                    <div class="col-xl-4 col-lg-4 wow animated fadeInUp" data-wow-delay="0.3s">
-                        <div class="counter-one__single">
-                            <div class="counter-one__single-top">
-                                <div class="img-box"><img src="assets/images/shapes/counter-v1-shape3.png"
-                                        alt="#"></div>
-                                <div class="text-box">
-                                    <h2><span class="odometer" data-count="1">00</span>k</h2>
-                                </div>
-                            </div>
-                            <div class="counter-one__single-bottom">
-                                <p>Usuarios Haciendo la Diferencia</p>
-                            </div>
-                        </div>
-                    </div>
-                    <!--End Counter One Single-->
-                </div>
-            </div>
-        </section>
-        <!--End Counter One -->
-
 
         <!--Start Feature Three -->
         <section class="feature-three">
@@ -362,21 +290,19 @@
                                     <img src="assets/images/resources/feature-v2-img3.jpg" alt="#">
                                     <div class="content-box">
                                         <p>Fondos Recaudados</p>
-                                        <h2>$24,537</h2>
+                                        <h2>$550.00</h2>
                                     </div>
                                 </div>
 
                                 <div class="content-box">
                                     <ul>
-                                        <li>50+ Misiones Completadas</li>
-                                        <li>Beneficiando a más de 5,000 personas</li>
+                                        <li>5+ Misiones Completadas</li>
+                                        <li>Beneficiando a más de 50 personas</li>
                                         <li>Trabajando durante la pandemia</li>
                                     </ul>
 
                                     <div class="btn-box">
-                                        <a class="thm-btn" href="about.html">
-                                            <span class="txt">Recaudar Fondos Ahora</span>
-                                        </a>
+
                                     </div>
                                 </div>
                             </div>
@@ -396,7 +322,7 @@
 
                             <div class="feature-three__img2 wow fadeInLeft" data-wow-delay="100ms"
                                 data-wow-duration="2500ms">
-                                <img src="assets/images/resources/feature-v3-img2.jpg" alt="#">
+                             
                             </div>
                             <div class="content-box">
                                 <div class="icon-box">
@@ -404,7 +330,7 @@
                                     <span class="icon-charity"></span>
                                 </div>
                                 <div class="text-box">
-                                    <h2><span class="dollar">$</span> <span class="odometer" data-count="1">00</span>
+                                    <h2><span class="dollar">$</span> <span class="odometer" data-count="10">00</span>
                                         <span class="plus">+</span>
                                     </h2>
                                     <p>Desde 2023 Donaciones</p>
@@ -417,8 +343,6 @@
             </div>
         </section>
         <!--End Feature Three -->
-
-
 
         <!--Start Gallery One -->
         <section class="gallery-one style3">
@@ -438,7 +362,7 @@
                                 </div>
 
                                 <div class="btn-box">
-                                    <a class="thm-btn" href="become-volunteer.html">
+                                    <a class="thm-btn" href="{{ route('unirse') }}">
                                         <span class="txt">Sé un Voluntario</span>
                                     </a>
                                 </div>

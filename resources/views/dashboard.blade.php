@@ -52,7 +52,7 @@
                                 </div>
 
                                 <div class="btn-box">
-                                    <a class="thm-btn" href="#">
+                                    <a class="thm-btn" href="{{ route('donaciones') }}">
                                         <span class="txt">Donar Ahora</span>
                                     </a>
                                 </div>
@@ -142,7 +142,7 @@
                             </div>
 
                             <div class="feature-one__single-content">
-                                <h2><a href="#">Amigable para Donantes</a></h2>
+                                <h2>Amigable para Donantes</h2>
                                 <p>Facilitamos el proceso de donación <br> para que puedas ayudar con facilidad</p>
                             </div>
                         </div>
@@ -160,7 +160,7 @@
                             </div>
 
                             <div class="feature-one__single-content">
-                                <h2><a href="#">Cuidado Médico</a></h2>
+                                <h2>Cuidado Médico</h2>
                                 <p>Brindamos atención médica <br> a quienes más lo necesitan</p>
                             </div>
                         </div>
@@ -178,7 +178,7 @@
                             </div>
 
                             <div class="feature-one__single-content">
-                                <h2><a href="#">Alimentos Saludables</a></h2>
+                                <h2>Alimentos Saludables</h2>
                                 <p>Proveemos comida nutritiva <br> para mejorar la salud de nuestra comunidad</p>
                             </div>
                         </div>
@@ -266,8 +266,7 @@
                                                 </div>
 
                                                 <div class="content-box">
-                                                    <h2>34,434</h2>
-                                                    <h3>Fondos Recaudados</h3>
+
                                                     <p>Ayudando a cumplir deseos en todo el mundo</p>
                                                 </div>
                                             </div>
@@ -304,7 +303,7 @@
                         </div>
 
                         <div class="about-one__bottom-btn">
-                            <a class="thm-btn" href="#">
+                            <a class="thm-btn" href="{{ route('about') }}">
                                 <span class="txt">Conoce Más Sobre Nosotros</span>
                             </a>
                         </div>
@@ -342,23 +341,23 @@
                                 <div class="inner">
                                     <div class="case-one__single-content-bg"
                                         style="background-image: url({{ asset('assets/images/shapes/case-v1-shape1.png')}});"></div>
-                                    <h2><a href="#">Ayúdanos a tocar las vidas <br> de estos jóvenes</a></h2>
+                                    <h2><a href="{{ route('donaciones') }}">Ayúdanos a tocar las vidas <br> de estos jóvenes</a></h2>
                                     <p>Tu ayuda puede cambiar la vida de muchos <br> jóvenes en necesidad.</p>
                                 </div>
                                 <div class="case-one__progress">
                                     <div class="case-one__progress-box">
                                         <div class="bar">
-                                            <div class="bar-inner count-bar" data-percent="45%">
-                                                <div class="count-text">45%</div>
+                                            <div class="bar-inner count-bar" data-percent="1%">
+                                                <div class="count-text">1%</div>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="bottom-text">
                                         <div class="left-text">
-                                            <p>$10,450 <span>Recaudados</span></p>
+                                            <p>$120 <span>Recaudados</span></p>
                                         </div>
                                         <div class="right-text">
-                                            <p>45% de $20,587</p>
+                                            <p>1% de $12.000</p>
                                         </div>
                                     </div>
                                 </div>
@@ -383,23 +382,23 @@
                                 <div class="inner">
                                     <div class="case-one__single-content-bg"
                                         style="background-image: url({{ asset('assets/images/shapes/case-v1-shape1.png')}});"></div>
-                                    <h2><a href="#">No más hambre <br> No dejemos a nadie atrás</a></h2>
+                                    <h2><a href="{{ route('donaciones') }}">No más hambre <br> No dejemos a nadie atrás</a></h2>
                                     <p>Juntos podemos erradicar el hambre y <br> brindar apoyo a los más necesitados.</p>
                                 </div>
                                 <div class="case-one__progress">
                                     <div class="case-one__progress-box">
                                         <div class="bar">
-                                            <div class="bar-inner count-bar" data-percent="90%">
-                                                <div class="count-text">90%</div>
+                                            <div class="bar-inner count-bar" data-percent="1%">
+                                                <div class="count-text">1%</div>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="bottom-text">
                                         <div class="left-text">
-                                            <p>$18,140 <span>Recaudados</span></p>
+                                            <p>$18 <span>Recaudados</span></p>
                                         </div>
                                         <div class="right-text">
-                                            <p>90% de $22,587</p>
+                                            <p>1% de $10.000</p>
                                         </div>
                                     </div>
                                 </div>
@@ -424,23 +423,23 @@
                                 <div class="inner">
                                     <div class="case-one__single-content-bg"
                                         style="background-image: url({{ asset('assets/images/shapes/case-v1-shape1.png')}});"></div>
-                                    <h2><a href="#">Comparte tus bendiciones <br> con los niños</a></h2>
+                                    <h2><a href="{{ route('donaciones') }}">Comparte tus bendiciones <br> con los niños</a></h2>
                                     <p>Brinda salud y esperanza a los niños <br> necesitados.</p>
                                 </div>
                                 <div class="case-one__progress">
                                     <div class="case-one__progress-box">
                                         <div class="bar">
-                                            <div class="bar-inner count-bar" data-percent="60%">
-                                                <div class="count-text">60%</div>
+                                            <div class="bar-inner count-bar" data-percent="1%">
+                                                <div class="count-text">1%</div>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="bottom-text">
                                         <div class="left-text">
-                                            <p>$15,450 <span>Recaudados</span></p>
+                                            <p>$150 <span>Recaudados</span></p>
                                         </div>
                                         <div class="right-text">
-                                            <p>60% de $21,587</p>
+                                            <p>7% de $21.000</p>
                                         </div>
                                     </div>
                                 </div>
@@ -471,17 +470,17 @@
                                 <div class="case-one__progress">
                                     <div class="case-one__progress-box">
                                         <div class="bar">
-                                            <div class="bar-inner count-bar" data-percent="70%">
-                                                <div class="count-text">70%</div>
+                                            <div class="bar-inner count-bar" data-percent="1%">
+                                                <div class="count-text">1%</div>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="bottom-text">
                                         <div class="left-text">
-                                            <p>$15,450 <span>Recaudados</span></p>
+                                            <p>$250 <span>Recaudados</span></p>
                                         </div>
                                         <div class="right-text">
-                                            <p>70% de $21,587</p>
+                                            <p>1% de $25.000</p>
                                         </div>
                                     </div>
                                 </div>
@@ -495,38 +494,6 @@
 
         <!--End Case One -->
 
-        <!--Start Video One -->
-        <section class="video-one">
-            <div class="shape3 float-bob-x">
-                <img src="{{ asset('assets/images/shapes/video-v1-shape3.png')}}" alt="#">
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-xl-12">
-                        <div class="video-one__inner">
-                            <div class="shape1">
-                                <img src="{{ asset('assets/images/shapes/video-v1-shape1.png')}}" alt="#">
-                            </div>
-                            <div class="shape2">
-                                <img src="{{ asset('assets/images/shapes/video-v1-shape2.png')}}" alt="#">
-                            </div>
-                            <div class="video-one__bg" style="background-image: url({{ asset('assets/images/backgrounds/video-v1-bg.jpg')}});"></div>
-                            <div class="video-one__icon">
-                                <a href="https://www.youtube.com/watch?v=pVE92TNDwUk" class="video-one__btn video-popup">
-                                    <span class="icon-play"></span>
-                                </a>
-                            </div>
-                            <div class="title-box">
-                                <h2>Ver Video</h2>
-                                <p>Descubre cómo la Fundación Dios es Bueno, Fiel y Justo está marcando una diferencia en las vidas de muchos en Ecuador.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!--End Video One -->
 
 
         <!--Start Counter One -->
@@ -544,7 +511,7 @@
                                     <img src="{{ asset('assets/images/shapes/counter-v1-shape1.png')}}" alt="#">
                                 </div>
                                 <div class="text-box">
-                                    <h2><span class="odometer" data-count="648">00</span></h2>
+                                    <h2><span class="odometer" data-count="1">00</span></h2>
                                 </div>
                             </div>
 
@@ -563,7 +530,7 @@
                                     <img src="{{ asset('assets/images/shapes/counter-v1-shape2.png')}}" alt="#">
                                 </div>
                                 <div class="text-box">
-                                    <h2><span class="dollar">$</span><span class="odometer" data-count="464">00</span><span class="m">m</span></h2>
+                                    <h2><span class="dollar">$</span><span class="odometer" data-count="550">00</span><span class="m"></span></h2>
                                 </div>
                             </div>
 
@@ -582,7 +549,7 @@
                                     <img src="{{ asset('assets/images/shapes/counter-v1-shape3.png')}}" alt="#">
                                 </div>
                                 <div class="text-box">
-                                    <h2><span class="odometer" data-count="587">00</span><span class="m">k</span></h2>
+                                    <h2><span class="odometer" data-count="10">00</span><span class="m"></span></h2>
                                 </div>
                             </div>
 
@@ -651,15 +618,15 @@
                                             <span class="icon-charity"></span>
                                         </div>
                                         <div class="text-box">
-                                            <h2><span class="dollar">$</span><span class="odometer" data-count="15224">00</span><span
-                                                    class="plus">+</span></h2>
-                                            <p>Donaciones Desde 2021</p>
+                                            <h2><span class="dollar">$ </span><span class="odometer" data-count="550.00"> 00</span><span
+                                                    class="plus"> </span></h2>
+                                            <p>Donaciones Desde 2020</p>
                                         </div>
                                     </div>
 
                                     <div class="btn-box">
-                                        <a class="thm-btn" href="#">
-                                            <span class="txt">Recauda Fondos Ahora</span>
+                                        <a class="thm-btn" href="{{ route('donaciones') }}">
+                                            <span class="txt">Donación Ahora</span>
                                         </a>
                                     </div>
                                 </div>
@@ -669,7 +636,7 @@
                                         <img src="{{ asset('assets/images/resources/feature-v2-img3.jpg')}}" alt="#">
                                         <div class="content-box">
                                             <p>Fondos Ayudados</p>
-                                            <h2>$24,537</h2>
+                                            <h2>$550,00</h2>
                                         </div>
                                     </div>
                                 </div>
@@ -701,7 +668,7 @@
                                 </div>
 
                                 <div class="btn-box">
-                                    <a class="thm-btn" href="become-volunteer.html">
+                                    <a class="thm-btn" href="{{ route('contactos') }}">
                                         <span class="txt">Sé un Voluntario</span>
                                     </a>
                                 </div>
@@ -720,7 +687,7 @@
                                 <div class="gallery-one__single-img">
                                     <img src="{{ asset('assets/images/gallery/gallery-v1-img1.jpg')}}" alt="#">
                                     <div class="text-box">
-                                        <h2><a href="#">Recaudación de Fondos</a></h2>
+                                        <h2><a href="{{ route('donaciones') }}">Recaudación de Fondos</a></h2>
                                     </div>
                                 </div>
                             </div>
@@ -733,7 +700,7 @@
                                 <div class="gallery-one__single-img bg2">
                                     <img src="{{ asset('assets/images/gallery/gallery-v1-img2.jpg')}}" alt="#">
                                     <div class="text-box">
-                                        <h2><a href="#">Alimentos Frescos</a></h2>
+                                        <h2><a href="{{ route('donaciones') }}">Alimentos Frescos</a></h2>
                                     </div>
                                 </div>
                             </div>
@@ -746,7 +713,7 @@
                                 <div class="gallery-one__single-img bg3">
                                     <img src="{{ asset('assets/images/gallery/gallery-v1-img3.jpg')}}" alt="#">
                                     <div class="text-box">
-                                        <h2><a href="#">Educación</a></h2>
+                                        <h2><a href="{{ route('donaciones') }}">Educación</a></h2>
                                     </div>
                                 </div>
                             </div>
@@ -759,7 +726,7 @@
                                 <div class="gallery-one__single-img bg4">
                                     <img src="{{ asset('assets/images/gallery/gallery-v1-img4.jpg')}}" alt="#">
                                     <div class="text-box">
-                                        <h2><a href="#">Médico</a></h2>
+                                        <h2><a href="{{ route('donaciones') }}">Médico</a></h2>
                                     </div>
                                 </div>
                             </div>
@@ -812,15 +779,12 @@
 
                                 <!--Start Testimonial One Single-->
                                 <div class="testimonial-one__single text-center">
-                                    <div class="shape1"><img src="{{ asset('assets/images/shapes/testimonial-v1-shape1.png')}}"
-                                            alt="#"></div>
-                                    <div class="shape2"><img src="{{ asset('assets/images/shapes/testimonial-v1-shape2.png')}}"
-                                            alt="#"></div>
+                                    <div class="shape1"> </div>
+                                    <div class="shape2"> </div>
                                     <div class="icon-box">
                                         <span class="icon-quote-right"></span>
                                     </div>
                                     <div class="testimonial-one__single-img">
-                                        <img src="{{ asset('assets/images/testimonial/testimonial-v1-img1.jpg')}}" alt="#">
                                     </div>
                                     <div class="author-info">
                                         <h2>Alexandra Orno</h2>
@@ -836,15 +800,13 @@
 
                                 <!--Start Testimonial One Single-->
                                 <div class="testimonial-one__single text-center">
-                                    <div class="shape1"><img src="{{ asset('assets/images/shapes/testimonial-v1-shape1.png')}}"
-                                            alt="#"></div>
-                                    <div class="shape2"><img src="{{ asset('assets/images/shapes/testimonial-v1-shape2.png')}}"
-                                            alt="#"></div>
+                                    <div class="shape1"> </div>
+                                    <div class="shape2"> </div>
                                     <div class="icon-box">
                                         <span class="icon-quote-right"></span>
                                     </div>
                                     <div class="testimonial-one__single-img">
-                                        <img src="{{ asset('assets/images/testimonial/testimonial-v1-img2.jpg')}}" alt="#">
+
                                     </div>
                                     <div class="author-info">
                                         <h2>Ana Ron Agona</h2>
@@ -860,15 +822,13 @@
 
                                 <!--Start Testimonial One Single-->
                                 <div class="testimonial-one__single text-center">
-                                    <div class="shape1"><img src="{{ asset('assets/images/shapes/testimonial-v1-shape1.png')}}"
-                                            alt="#"></div>
-                                    <div class="shape2"><img src="{{ asset('assets/images/shapes/testimonial-v1-shape2.png')}}"
-                                            alt="#"></div>
+                                    <div class="shape1"> </div>
+                                    <div class="shape2"> </div>
                                     <div class="icon-box">
                                         <span class="icon-quote-right"></span>
                                     </div>
                                     <div class="testimonial-one__single-img">
-                                        <img src="{{ asset('assets/images/testimonial/testimonial-v1-img3.jpg')}}" alt="#">
+
                                     </div>
                                     <div class="author-info">
                                         <h2>Mahfuz R.</h2>
@@ -894,281 +854,6 @@
 
         <!--End Testimonial One -->
 
-
-        <!--Start Team One -->
-        <section class="team-one">
-            <div class="auto-container">
-                <div class="team-one__inner">
-                    <div class="team-one__bg" style="background-image: url({{ asset('assets/images/pattern/team-v1-bg.jpg')}});">
-                    </div>
-                    <div class="container">
-                        <div class="team-one__top">
-                            <div class="sec-title">
-                                <div class="sec-title__tagline">
-                                    <h6>Nuestro Equipo de Apoyo</h6>
-                                </div>
-                                <h2 class="sec-title__title">Siempre dispuestos a ayudar
-                                </h2>
-                            </div>
-
-                            <div class="btn-box">
-                                <a href="#">Ver Lista Completa de Expertos</a>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <!--Start Team One Single-->
-                            <div class="col-xl-4 col-lg-4 wow fadeInLeft" data-wow-delay="0ms"
-                                data-wow-duration="1500ms">
-                                <div class="team-one__single">
-                                    <div class="team-one__single-img">
-                                        <div class="team-one__single-img-bg"
-                                            style="background-image: url({{ asset('assets/images/shapes/team-v1-shape1.png')}});">
-                                        </div>
-                                        <div class="inner">
-                                            <img src="{{ asset('assets/images/team/team-v1-img1.jpg')}}" alt="#">
-                                        </div>
-                                    </div>
-
-                                    <div class="team-one__single-content text-center">
-                                        <h2><a href="#">Martín Kellis</a></h2>
-                                        <p>Jefe de Diseño</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <!--End Team One Single-->
-
-                            <!--Start Team One Single-->
-                            <div class="col-xl-4 col-lg-4 wow fadeInRight" data-wow-delay="100ms"
-                                data-wow-duration="1500ms">
-                                <div class="team-one__single">
-                                    <div class="team-one__single-img">
-                                        <div class="team-one__single-img-bg"
-                                            style="background-image: url({{ asset('assets/images/shapes/team-v1-shape1.png')}});">
-                                        </div>
-                                        <div class="inner">
-                                            <img src="{{ asset('assets/images/team/team-v1-img2.jpg')}}" alt="#">
-                                        </div>
-                                    </div>
-
-                                    <div class="team-one__single-content text-center">
-                                        <h2><a href="#">Martín Rage</a></h2>
-                                        <p>Experto en Marketing y Jefe</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <!--End Team One Single-->
-
-                            <!--Start Team One Single-->
-                            <div class="col-xl-4 col-lg-4 wow fadeInLeft" data-wow-delay="200ms"
-                                data-wow-duration="1500ms">
-                                <div class="team-one__single">
-                                    <div class="team-one__single-img">
-                                        <div class="team-one__single-img-bg"
-                                            style="background-image: url({{ asset('assets/images/shapes/team-v1-shape1.png')}});">
-                                        </div>
-                                        <div class="inner">
-                                            <img src="{{ asset('assets/images/team/team-v1-img3.jpg')}}" alt="#">
-                                        </div>
-                                    </div>
-
-                                    <div class="team-one__single-content text-center">
-                                        <h2><a href="#">Roberto William</a></h2>
-                                        <p>Consejero Ejecutivo, Grupo City</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <!--End Team One Single-->
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!--End Team One -->
-
-        <!--Start Blog One -->
-        <section class="blog-one">
-            <div class="container">
-                <div class="sec-title text-center">
-                    <div class="sec-title__tagline">
-                        <h6>Últimas Noticias</h6>
-                    </div>
-                    <h2 class="sec-title__title">Novedades y Artículos Recientes</h2>
-                </div>
-                <div class="row">
-                    <!--Start Blog One Single-->
-                    <div class="col-xl-4 col-lg-4 wow fadeInUp" data-wow-delay=".3s">
-                        <div class="blog-one__single">
-                            <div class="blog-one__single-img">
-                                <div class="inner">
-                                    <img src="{{ asset('assets/images/blog/blog-v1-img1.jpg')}}" alt="#">
-                                </div>
-                                <ul class="overlay-text">
-                                    <li>
-                                        <p>Caridad</p>
-                                    </li>
-                                    <li class="style2">
-                                        <p>12 Feb</p>
-                                    </li>
-                                </ul>
-                            </div>
-
-                            <div class="blog-one__single-content">
-                                <div class="white-bg"></div>
-                                <div class="left-bg"></div>
-                                <div class="right-bg"></div>
-                                <ul class="meta-box">
-                                    <li>
-                                        <div class="icon">
-                                            <span class="icon-user"></span>
-                                        </div>
-                                        <div class="text">
-                                            <p><a href="#">Por Administrador</a></p>
-                                        </div>
-                                    </li>
-
-                                    <li>
-                                        <div class="icon">
-                                            <span class="icon-comment-outline"></span>
-                                        </div>
-                                        <div class="text">
-                                            <p><a href="#">12 Comentarios</a></p>
-                                        </div>
-                                    </li>
-                                </ul>
-
-                                <h2><a href="#">Plan de Caridad del Mes Internacional del Reino Unido</a></h2>
-
-                                <div class="blog-one__single-content-bottom">
-                                    <div class="btn-box">
-                                        <a href="#">Detalles <span class="icon-right-arrow21"></span></a>
-                                    </div>
-                                    <div class="icon-box">
-                                        <span class="icon-bookmark"></span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!--End Blog One Single-->
-
-                    <!--Start Blog One Single-->
-                    <div class="col-xl-4 col-lg-4 wow fadeInDown" data-wow-delay=".3s">
-                        <div class="blog-one__single">
-                            <div class="blog-one__single-img">
-                                <div class="inner">
-                                    <img src="{{ asset('assets/images/blog/blog-v1-img2.jpg')}}" alt="#">
-                                </div>
-                                <ul class="overlay-text">
-                                    <li>
-                                        <p>Caridad</p>
-                                    </li>
-                                    <li class="style2">
-                                        <p>12 Feb</p>
-                                    </li>
-                                </ul>
-                            </div>
-
-                            <div class="blog-one__single-content">
-                                <div class="white-bg"></div>
-                                <div class="left-bg"></div>
-                                <div class="right-bg"></div>
-                                <ul class="meta-box">
-                                    <li>
-                                        <div class="icon">
-                                            <span class="icon-user"></span>
-                                        </div>
-                                        <div class="text">
-                                            <p><a href="#">Por Administrador</a></p>
-                                        </div>
-                                    </li>
-
-                                    <li>
-                                        <div class="icon">
-                                            <span class="icon-comment-outline"></span>
-                                        </div>
-                                        <div class="text">
-                                            <p><a href="#">12 Comentarios</a></p>
-                                        </div>
-                                    </li>
-                                </ul>
-
-                                <h2><a href="#">Plan de Caridad del Mes Internacional del Reino Unido</a></h2>
-
-                                <div class="blog-one__single-content-bottom">
-                                    <div class="btn-box">
-                                        <a href="#">Detalles <span class="icon-right-arrow21"></span></a>
-                                    </div>
-                                    <div class="icon-box">
-                                        <span class="icon-bookmark"></span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!--End Blog One Single-->
-
-                    <!--Start Blog One Single-->
-                    <div class="col-xl-4 col-lg-4 wow fadeInUp" data-wow-delay=".3s">
-                        <div class="blog-one__single">
-                            <div class="blog-one__single-img">
-                                <div class="inner">
-                                    <img src="{{ asset('assets/images/blog/blog-v1-img3.jpg')}}" alt="#">
-                                </div>
-                                <ul class="overlay-text">
-                                    <li>
-                                        <p>Caridad</p>
-                                    </li>
-                                    <li class="style2">
-                                        <p>12 Feb</p>
-                                    </li>
-                                </ul>
-                            </div>
-
-                            <div class="blog-one__single-content">
-                                <div class="white-bg"></div>
-                                <div class="left-bg"></div>
-                                <div class="right-bg"></div>
-                                <ul class="meta-box">
-                                    <li>
-                                        <div class="icon">
-                                            <span class="icon-user"></span>
-                                        </div>
-                                        <div class="text">
-                                            <p><a href="#">Por Administrador</a></p>
-                                        </div>
-                                    </li>
-
-                                    <li>
-                                        <div class="icon">
-                                            <span class="icon-comment-outline"></span>
-                                        </div>
-                                        <div class="text">
-                                            <p><a href="#">12 Comentarios</a></p>
-                                        </div>
-                                    </li>
-                                </ul>
-
-                                <h2><a href="#">Plan de Caridad del Mes Internacional del Reino Unido</a></h2>
-
-                                <div class="blog-one__single-content-bottom">
-                                    <div class="btn-box">
-                                        <a href="#">Detalles <span class="icon-right-arrow21"></span></a>
-                                    </div>
-                                    <div class="icon-box">
-                                        <span class="icon-bookmark"></span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!--End Blog One Single-->
-
-                </div>
-            </div>
-        </section>
-
-        <!--End Blog One -->
 
      @endsection
 </x-app-layout>

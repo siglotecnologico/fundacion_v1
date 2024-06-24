@@ -11,34 +11,17 @@
                                 </a>
 
                                 <ul class="main-menu__list">
-                                    <li class="current">
-                                        <a href="{{ route('inicio') }}"> Inicio</a>
+                                    <li class="{{ request()->routeIs('inicio') ? 'current' : '' }}">
+                                        <a href="{{ route('inicio') }}">Inicio</a>
                                     </li>
-
-                                    <li>
+                                    <li class="{{ request()->routeIs('about') ? 'current' : '' }}">
                                         <a href="{{ route('about') }}">Sobre Nosotros</a>
                                     </li>
-                                    <li>
+                                    <li class="{{ request()->routeIs('donaciones') ? 'current' : '' }}">
                                         <a href="{{ route('donaciones') }}">Donaciones</a>
                                     </li>
-
-                                  {{--   <li class="dropdown">
-                                        <a href="#">Donaciones</a>
-                                        <ul>
-                                            <li><a href="#">Donación</a></li>
-                                            <li><a href="#">Lista de Donaciones</a>
-                                            </li>
-                                            <li><a href="#">Detalles de Donación</a>
-                                            </li>
-                                        </ul>
-                                    </li> --}}
-
-
-
-                                    <li class="dropdown">
-                                        {{--<a href="#">Blog</a>--}}
-                                    <li>
-                                        <a href="{{ route('contactos') }}"  >Contacto</a>
+                                    <li class="{{ request()->routeIs('contactos') ? 'current' : '' }}">
+                                        <a href="{{ route('contactos') }}">Contacto</a>
                                     </li>
                                 </ul>
                             </div>
@@ -46,18 +29,12 @@
 
                         <div class="main-header-one__bottom-right">
                             <div class="btn-box1">
-                                <a href="#">Únete </a>
+                                <a href="{{  route('unirse') }}">Únete </a>
                             </div>
 
                             <div class="btn-box2">
-                                <a href="#">Voluntario</a>
+                                <a href="{{ route('contactos') }}">Voluntario</a>
                             </div>
-
-                           {{--  <div class="header-search-box">
-                                <a href="#" class="main-menu__search search-toggler icon-search">
-                                </a>
-                            </div> --}}
-
                         </div>
                     </div>
                 </div>

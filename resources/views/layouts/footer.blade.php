@@ -47,19 +47,8 @@
                         <div class="footer-widget__single">
                             <div class="footer-widget__single-about">
                                 <div class="logo-box">
-                                    <a href="#"><img src="assets/images/resources/3.png" alt="#"></a>
+                                    <a href="#"><img src="assets/images/resources/3.png" width="60%" alt="#"></a>
                                 </div>
-
-                                <div class="footer-widget__single-about-text">
-                                    <p>Nuestra organización de caridad se dedica a mejorar la vida de aquellos que más
-                                        lo necesitan. Únete a nosotros hoy mismo.</p>
-                                </div>
-
-                              {{--   <div class="footer-widget__single-about-btn">
-                                    <a class="thm-btn" href="#">
-                                        <span class="txt">Únete Ahora</span>
-                                    </a>
-                                </div> --}}
                             </div>
                         </div>
                     </div>
@@ -68,9 +57,7 @@
                     <!--Inicio del Widget de Footer Single Derecho-->
                     <div class="col-xl-3 col-lg-6 col-md-6 wow animated fadeInUp" data-wow-delay="0.2s">
                         <div class="footer-one__single footer-one__single-address">
-                            <div class="title">
-                                <h3>Dirección</h3>
-                            </div>
+
 
                             <ul class="footer-one__single-address-box">
                                 <li>
@@ -87,6 +74,15 @@
                                         </div>
                                     </div>
                                 </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-6 col-md-6 wow animated fadeInUp" data-wow-delay="0.2s">
+                        <div class="footer-one__single footer-one__single-address">
+
+
+                            <ul class="footer-one__single-address-box">
+
 
                                 <li>
                                     <div class="title-box">
@@ -98,70 +94,23 @@
                                         </div>
 
                                         <div class="content-box">
-                                            <p><a href="#">+593 99 841 9115</a></p>
-                                            <p><a href="#">+593 99 841 9115</a></p>
+                                            <p><a href="tel:593998419115">+593 99 841 9115</a></p>
                                         </div>
                                     </div>
                                 </li>
                             </ul>
                         </div>
                     </div>
+                    <div class="col-xl-3 col-lg-6 col-md-6 wow animated fadeInUp" data-wow-delay="0.2s">
+                        <div class="footer-one__single footer-one__single-address">
 
-                    <!--Fin del Widget de Footer Single Derecho-->
-
-                    <!--Inicio del Widget de Footer Single Derecho
-                    <div class="col-xl-2 col-lg-6 col-md-6 wow animated fadeInUp" data-wow-delay="0.3s">
-                        <div class="footer-one__single footer-one__single-explore">
-                            <div class="title">
-                                <h3>Explorar Enlaces</h3>
+                            <div class="footer-widget__single-about-text">
+                                <p>Nuestra organización de caridad se dedica a mejorar la vida de aquellos que más
+                                    lo necesitan. Únete a nosotros hoy mismo.</p>
                             </div>
 
-                            <ul class="footer-one__single-explore-list">
-                                <li><a href="#">Caridad</a></li>
-                                <li><a href="#">Donación</a></li>
-                                <li><a href="#">Recaudación de Fondos</a></li>
-                                <li><a href="#">Nuestra Campaña</a></li>
-                                <li><a href="#">Voluntariado</a></li>
-                                <li><a href="#">Acerca de Nosotros</a></li>
-                                <li><a href="#">Contáctanos</a></li>
-                            </ul>
-
-                        </div>
-                    </div>-->
-                    <!--Fin del Widget de Footer Single Derecho-->
-
-                    <!--Inicio del Widget de Footer Single Derecho-->
-                    <div class="col-xl-4 col-lg-6 col-md-6 wow animated fadeInUp" data-wow-delay="0.4s">
-                        <div class="footer-one__single footer-one__single-post">
-                            <div class="title">
-                                <h3>Últimas Publicaciones </h3>
-                            </div>
-
-                            <ul class="footer-one__single-post-box">
-                                <li>
-                                    <div class="img-box">
-                                        <img src="assets/images/footer/footer-v1-img1.jpg" alt="#">
-                                    </div>
-                                    <div class="content-box">
-                                        <span>12 Feb 2023</span>
-                                        <p><a href="#">18 Mejores Campañas de Marketing de Caridad</a></p>
-                                    </div>
-                                </li>
-
-                                <li>
-                                    <div class="img-box">
-                                        <img src="assets/images/footer/footer-v1-img2.jpg" alt="#">
-                                    </div>
-                                    <div class="content-box">
-                                        <span>14 Feb 2023</span>
-                                        <p><a href="#">Caridad del Mes <br> Futuros Dorados</a></p>
-                                    </div>
-                                </li>
-
-                            </ul>
                         </div>
                     </div>
-                    <!--Fin del Widget de Footer Single Derecho-->
                 </div>
             </div>
         </div>
@@ -172,19 +121,7 @@
         <div class="container">
             <div class="bottom-inner">
 
-                {{-- <div class="footer-one__bottom-left">
-                    <div class="title-box">
-                        <h4>Síguenos en Redes Sociales</h4>
-                    </div>
-                    <div class="social-links">
-                        <ul>
-                            <li><a href="#"><span class="icon-facebook-logo"></span></a></li>
-                            <li><a href="#"><span class="icon-twitter"></span></a></li>
-                            <li><a href="#"><span class="icon-pinterest"></span></a></li>
-                            <li><a href="#"><span class="icon-instagram"></span></a></li>
-                        </ul>
-                    </div>
-                </div> --}}
+
 
                 <div class="copyright">
                     <p>©2024 <a href="https://siglotecnologico.com/">Siglo Tecnológico</a> Todos los derechos
@@ -223,7 +160,8 @@
                 const formMessages = document.getElementById('form-messages');
 
                 if (xhr.status === 200) {
-                    formMessages.innerHTML = `<div class="alert alert-success">${response.message}</div>`;
+                    formMessages.innerHTML =
+                        `<div class="alert alert-success">${response.message}</div>`;
                     form.reset();
                 } else {
                     let errorsHtml = '<div class="alert alert-danger"><ul>';
@@ -238,5 +176,4 @@
             xhr.send(formData);
         });
     });
-    </script>
-
+</script>

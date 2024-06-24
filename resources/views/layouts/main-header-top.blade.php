@@ -44,7 +44,7 @@
                                 </div>
                                 <div class="text-box">
                                     <p>Línea de ayuda y soporte</p>
-                                    <p><a href="tel:8857002451"><b>+593 99 841 9115</b></a></p>
+                                    <p><a href="tel:593998419115"><b>+593 99 841 9115</b></a></p>
                                 </div>
                             </div>
                         </li>

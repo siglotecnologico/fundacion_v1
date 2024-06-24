@@ -29,6 +29,10 @@ Route::get('donaciones', function () {
     return view('donaciones');
 })->name('donaciones');
 
+Route::get('unirse', function () {
+    return view('unirse');
+})->name('unirse');
+
 
 Route::middleware([
     'auth:sanctum',
