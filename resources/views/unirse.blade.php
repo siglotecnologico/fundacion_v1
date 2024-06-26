@@ -143,10 +143,25 @@
 
                     <!--Inicio Formulario Convertirse en Voluntario-->
                     <div class="col-xl-6 col-lg-6">
-                        <div class="become-volunteer-one__form">
-                            <form id="contact-form" class="default-form2 contact-form-validated comment-one__form"
-                                action="assets/inc/sendemail.php" novalidate="novalidate">
+                        @if (session('success'))
+                            <div class="alert alert-success">
+                                {{ session('success') }}
+                            </div>
+                        @endif
 
+                        @if ($errors->any())
+                            <div class="alert alert-danger">
+                                <ul>
+                                    @foreach ($errors->all() as $error)
+                                        <li>{{ $error }}</li>
+                                    @endforeach
+                                </ul>
+                            </div>
+                        @endif
+                        <div class="become-volunteer-one__form">
+                            <form id="contact-form" class="default-form2 contact-form-validated comment-one__form subscribe-form" action="{{ route('unirse.store') }}"
+                                method="post">
+                                @csrf
                                 <div class="row">
                                     <div class="col-xl-12 col-lg-12 col-md-12">
                                         <div class="input-box">
@@ -193,16 +208,17 @@
                                 <div class="row">
                                     <div class="col-xl-12 col-lg-12 col-md-12">
                                         <div class="become-volunteer-one__form-btn">
-                                            <button class="thm-btn" type="submit"
+                                            <button class="thm-btn" id="submit-button" type="submit"
                                                 data-loading-text="Por favor espera...">
                                                 <span class="txt">Enviar</span>
                                             </button>
                                         </div>
                                     </div>
                                 </div>
-
+                                <div id="loading-spinner" style="display: none;">Enviando...</div>
                             </form>
                         </div>
+                        <div id="form-messages"></div>
                     </div>
                     <!--Fin Formulario Convertirse en Voluntario-->
                 </div>
@@ -341,4 +357,49 @@
         </section>
         <!--Fin Galería-->
     @endsection
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const form = document.getElementById('subscribe-form');
+            const submitButton = document.getElementById('submit-button');
+            const loadingSpinner = document.getElementById('loading-spinner');
+
+            form.addEventListener('submit', function(event) {
+                event.preventDefault();
+
+                // Deshabilitar el botón de envío y mostrar el spinner
+                submitButton.disabled = true;
+                loadingSpinner.style.display = 'block';
+
+                const formData = new FormData(form);
+                const xhr = new XMLHttpRequest();
+                xhr.open('POST', form.action, true);
+                xhr.setRequestHeader('X-Requested-With', 'XMLHttpRequest');
+
+                xhr.onload = function() {
+                    // Habilitar el botón de envío y ocultar el spinner
+                    submitButton.disabled = false;
+                    loadingSpinner.style.display = 'none';
+
+                    const response = JSON.parse(xhr.responseText);
+                    const formMessages = document.getElementById('form-messages');
+
+                    if (xhr.status === 200) {
+                        formMessages.innerHTML =
+                            `<div class="alert alert-success">${response.message}</div>`;
+                        form.reset();
+                    } else {
+                        let errorsHtml = '<div class="alert alert-danger"><ul>';
+                        for (let error of response.errors) {
+                            errorsHtml += `<li>${error}</li>`;
+                        }
+                        errorsHtml += '</ul></div>';
+                        formMessages.innerHTML = errorsHtml;
+                    }
+                };
+
+                xhr.send(formData);
+            });
+        });
+    </script>
 </x-app-layout>
+

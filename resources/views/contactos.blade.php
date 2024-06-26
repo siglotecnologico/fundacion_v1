@@ -70,12 +70,28 @@
                 <div class="row">
                     <!--Start Contact Two From-->
                     <div class="col-xl-6 col-lg-7">
+                        @if (session('success'))
+                            <div class="alert alert-success">
+                                {{ session('success') }}
+                            </div>
+                        @endif
+
+                        @if ($errors->any())
+                            <div class="alert alert-danger">
+                                <ul>
+                                    @foreach ($errors->all() as $error)
+                                        <li>{{ $error }}</li>
+                                    @endforeach
+                                </ul>
+                            </div>
+                        @endif
                         <div class="contact-two__from">
                             <div class="title">
                                 <h2>No dudes en escribirnos en cualquier momento</h2>
                             </div>
-                            <form id="contact-form" class="default-form2 contact-form-validated comment-one__form"
-                                action="#" novalidate="novalidate">
+                            <form id="contact-form" class="default-form2 contact-form-validated comment-one__form"action="{{ route('contactoinfo.store') }}"
+                            method="post" novalidate="novalidate">
+                            @csrf
 
                                 <div class="row">
                                     <div class="col-xl-12 col-lg-12 col-md-12">
@@ -118,9 +134,10 @@
                                     </div>
                                 </div>
 
+                                <div id="loading-spinner" style="display: none;">Enviando...</div>
                             </form>
-
                         </div>
+                        <div id="form-messages"></div>
                     </div>
                     <!--End Contact Two From-->
 
