@@ -159,7 +159,7 @@
                             </div>
                         @endif
                         <div class="become-volunteer-one__form">
-                            <form id="contact-form" class="default-form2 contact-form-validated comment-one__form subscribe-form" action="{{ route('unirse.store') }}"
+                            <form id="contact-form" class="default-form2 contact-form-validated comment-one__form" action="{{ route('unirse.store') }}"
                                 method="post">
                                 @csrf
                                 <div class="row">
@@ -357,49 +357,50 @@
         </section>
         <!--Fin Galería-->
     @endsection
-    <script>
-        document.addEventListener("DOMContentLoaded", function() {
-            const form = document.getElementById('subscribe-form');
-            const submitButton = document.getElementById('submit-button');
-            const loadingSpinner = document.getElementById('loading-spinner');
 
-            form.addEventListener('submit', function(event) {
-                event.preventDefault();
-
-                // Deshabilitar el botón de envío y mostrar el spinner
-                submitButton.disabled = true;
-                loadingSpinner.style.display = 'block';
-
-                const formData = new FormData(form);
-                const xhr = new XMLHttpRequest();
-                xhr.open('POST', form.action, true);
-                xhr.setRequestHeader('X-Requested-With', 'XMLHttpRequest');
-
-                xhr.onload = function() {
-                    // Habilitar el botón de envío y ocultar el spinner
-                    submitButton.disabled = false;
-                    loadingSpinner.style.display = 'none';
-
-                    const response = JSON.parse(xhr.responseText);
-                    const formMessages = document.getElementById('form-messages');
-
-                    if (xhr.status === 200) {
-                        formMessages.innerHTML =
-                            `<div class="alert alert-success">${response.message}</div>`;
-                        form.reset();
-                    } else {
-                        let errorsHtml = '<div class="alert alert-danger"><ul>';
-                        for (let error of response.errors) {
-                            errorsHtml += `<li>${error}</li>`;
-                        }
-                        errorsHtml += '</ul></div>';
-                        formMessages.innerHTML = errorsHtml;
-                    }
-                };
-
-                xhr.send(formData);
-            });
-        });
-    </script>
 </x-app-layout>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const form = document.getElementById('subscribe-form');
+        const submitButton = document.getElementById('submit-button');
+        const loadingSpinner = document.getElementById('loading-spinner');
 
+        form.addEventListener('submit', function(event) {
+            event.preventDefault();
+
+            // Deshabilitar el botón de envío y mostrar el spinner
+            submitButton.disabled = true;
+            loadingSpinner.style.display = 'block';
+
+            const formData = new FormData(form);
+            const xhr = new XMLHttpRequest();
+            xhr.open('POST', form.action, true);
+            xhr.setRequestHeader('X-Requested-With', 'XMLHttpRequest');
+
+            xhr.onload = function() {
+                // Habilitar el botón de envío y ocultar el spinner
+                submitButton.disabled = false;
+                loadingSpinner.style.display = 'none';
+
+                const response = JSON.parse(xhr.responseText);
+                console.log(response)
+                const formMessages = document.getElementById('form-messages');
+
+                if (xhr.status === 200) {
+                    formMessages.innerHTML =
+                        `<div class="alert alert-success">${response.messagesuscribete}</div>`;
+                    form.reset();
+                } else {
+                    let errorsHtml = '<div class="alert alert-danger"><ul>';
+                    for (let error of response.errors) {
+                        errorsHtml += `<li>${error}</li>`;
+                    }
+                    errorsHtml += '</ul></div>';
+                    formMessages.innerHTML = errorsHtml;
+                }
+            };
+
+            xhr.send(formData);
+        });
+    });
+</script>

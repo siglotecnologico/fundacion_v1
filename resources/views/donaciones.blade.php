@@ -304,7 +304,7 @@
                                         <h2>Cómo Tu Donación <br> Hace la Diferencia</h2>
                                     </div>
                                     <div class="btn-box">
-                                        <a href="#"  id="dp-btn-6ea92033-a528-4214-9d4e-82249901449c"></a>
+                                        {{-- <a href="#"  id="dp-btn-6ea92033-a528-4214-9d4e-82249901449c"></a> --}}
                                     </div>
 
                                 </div>

@@ -89,7 +89,7 @@
                             <div class="title">
                                 <h2>No dudes en escribirnos en cualquier momento</h2>
                             </div>
-                            <form id="contact-form" class="default-form2 contact-form-validated comment-one__form"action="{{ route('contactoinfo.store') }}"
+                            <form id="contact-form" class="default-form2 contact-form-validated comment-one__form" action="{{ route('contactoinfo.store') }}"
                             method="post" novalidate="novalidate">
                             @csrf
 

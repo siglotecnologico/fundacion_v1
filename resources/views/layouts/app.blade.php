@@ -46,7 +46,7 @@
         <!-- Scripts
         @vite(['resources/css/app.css', 'resources/js/app.js'])
         -->
-        <style>
+{{--         <style>
             /* Estilos personalizados para el botón */
             #dp-btn-6ea92033-a528-4214-9d4e-82249901449c button {
                 background-color: transparent; /* Hacer el fondo transparente */
@@ -56,7 +56,7 @@
                 font-size: inherit; /* Heredar el tamaño de fuente */
                 cursor: pointer; /* Cambiar el cursor al pasar por encima */
             }
-        </style>
+        </style> --}}
         <!-- Styles -->
     </head>
     <body class="font-sans antialiased">
@@ -94,7 +94,7 @@
         <a href="#" data-target="html" class="scroll-to-target scroll-to-top">
             <i class="icon-down-arrow"></i>
         </a>
-        <script data-reference-id="6ea92033-a528-4214-9d4e-82249901449c">
+{{--         <script data-reference-id="6ea92033-a528-4214-9d4e-82249901449c">
             (function(){
                 const z = !!window.DlocalGo,
                 s = z ? document.querySelector('script[src="https://static.dlocalgo.com/dlocalgo.min.js"]') : document.createElement("script");
@@ -112,7 +112,7 @@
                     });
                 });
             })();
-        </script>
+        </script> --}}
         <script src="{{ asset('assets/vendors/jquery/jquery-3.6.0.min.js')}}"></script>
         <script src="{{ asset('assets/vendors/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
         <script src="{{ asset('assets/vendors/bootstrap-select/js/bootstrap-select.min.js')}}"></script>

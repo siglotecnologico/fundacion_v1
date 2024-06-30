@@ -32,7 +32,7 @@
                                 <div id="loading-spinner" style="display: none;">Enviando...</div>
                             </form>
                         </div>
-                        <div id="form-messages"></div>
+                        <div id="form-messagesfooter"></div>
                     </div>
 
                 </div>
@@ -157,11 +157,11 @@
                 loadingSpinner.style.display = 'none';
 
                 const response = JSON.parse(xhr.responseText);
-                const formMessages = document.getElementById('form-messages');
+                const formMessages = document.getElementById('form-messagesfooter');
 
                 if (xhr.status === 200) {
                     formMessages.innerHTML =
-                        `<div class="alert alert-success">${response.message}</div>`;
+                        `<div class="alert alert-success">${response.message_suscripcion}</div>`;
                     form.reset();
                 } else {
                     let errorsHtml = '<div class="alert alert-danger"><ul>';

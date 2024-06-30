@@ -29,9 +29,7 @@ class ContactoController extends Controller
         // Enviar una respuesta al cliente
         return redirect()->back()->with('success', 'Tu información fue enviada con éxito. Nos pondremos en contacto contigo muy pronto.');
 
-    }
-
-
+    } 
 
     public function suscripcion(Request $request)
     {
@@ -52,11 +50,11 @@ class ContactoController extends Controller
                     ->subject('Nueva suscripción al boletín');
         });
         if ($request->ajax()) {
-            return response()->json(['message' => 'Te has suscrito con éxito. Pronto recibirás nuestras actualizaciones.'], 200);
+            return response()->json(['message_suscripcion' => 'Te has suscrito con éxito. Pronto recibirás nuestras actualizaciones.'], 200);
         }
 
         // Redireccionar con mensaje de éxito
-        return redirect()->back()->with('success', 'Te has suscrito con éxito. Pronto recibirás nuestras actualizaciones.');
+        return redirect()->back()->with('success_suscripcion', 'Te has suscrito con éxito. Pronto recibirás nuestras actualizaciones.');
     }
     public function unirse(Request $request)
     {
@@ -97,7 +95,6 @@ class ContactoController extends Controller
         // Redireccionar con mensaje de éxito
         return redirect()->back()->with('messagesuscribete', 'Te has unido con éxito. Pronto nos pondremos en contacto contigo.');
     }
-
 
     public function contactoinfo(Request $request)
     {
