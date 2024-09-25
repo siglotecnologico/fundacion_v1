@@ -304,7 +304,11 @@
                                         <h2>Cómo Tu Donación <br> Hace la Diferencia</h2>
                                     </div>
                                     <div class="btn-box">
-                                        {{-- <a href="#"  id="dp-btn-6ea92033-a528-4214-9d4e-82249901449c"></a> --}}
+                                        <form action="{{ route('donations.monto') }}" method="POST">
+                                            @csrf <!-- Esto es importante para proteger el formulario contra CSRF -->
+                                            <input type="hidden" name="monto" value="20">
+                                            <a type="submit"><button type="submit">Donar $20</button></a>
+                                        </form>
                                     </div>
 
                                 </div>
@@ -324,79 +328,37 @@
 
                                     </div>
                                     <div class="btn-box">
-                                        <a href="#">Contribuir</a>
+                                        <a href="{{ route('donations.create') }}">Contribuir</a>
                                     </div>
                                 </div>
                             </div>
                             <!--End Sidebar Single-->
+                            <div class="checkout-area__sidebar-single donation-summary">
+                                <div class="title">
+                                    <h3>Donar ahora!</h3>
+                                </div>
+                                <div class="donation-payment">
+                                    <form action="{{ route('donations.monto') }}" method="POST">
+                                        @csrf <!-- Esto es importante para proteger el formulario contra CSRF -->
+                                        <div class="field-input">
+                                            <input type="number" name="monto" placeholder="Monto en USD"
+                                                value="{{ old('monto') }}" required min="5" step="0.01"
+                                                style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 4px;">
+                                        </div>
+                                        <div class="field-input">
+                                            <br>
+                                            <button type="submit" class="btn btn-primary">Procesar Donación</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
 
                             <div class="sidebar__bottom wow animated fadeInUp" data-wow-delay="0.3s">
                                 <div class="sidebar__bottom-bg"
                                     style="background-image: url(assets/images/shapes/sidebar-bottom-shape.jpg);"></div>
-
-                                <!--Start Sidebar Single-->
-                                <div class="sidebar__single sidebar__latest-post">
-                                    <div class="title-box">
-                                        <h2>Últimas Publicaciones</h2>
-                                    </div>
-
-                                    <ul class="sidebar__latest-post-list">
-                                        <li>
-                                            <div class="img-box">
-                                                <img src="assets/images/blog/sidebar-latest-post-img1.jpg" alt="#">
-                                            </div>
-
-                                            <div class="content-box">
-                                                <p> <span class="icon-calendar"></span> Feb 18, 2023</p>
-                                                <h3><a href="#">Un vistazo a nuestro <br> proceso de diseño</a></h3>
-                                            </div>
-                                        </li>
-
-                                        <li>
-                                            <div class="img-box">
-                                                <img src="assets/images/blog/sidebar-latest-post-img2.jpg" alt="#">
-                                            </div>
-
-                                            <div class="content-box">
-                                                <p> <span class="icon-calendar"></span> Feb 18, 2023</p>
-                                                <h3><a href="#">Cómo manejar a tu <br> buen empleado</a></h3>
-                                            </div>
-                                        </li>
-
-                                        <li>
-                                            <div class="img-box">
-                                                <img src="assets/images/blog/sidebar-latest-post-img3.jpg" alt="#">
-                                            </div>
-
-                                            <div class="content-box">
-                                                <p> <span class="icon-calendar"></span> Feb 20, 2023</p>
-                                                <h3><a href="#">Cómo Aprovechar al <br> Máximo las Vacaciones...</a>
-                                                </h3>
-                                            </div>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <!--End Sidebar Single-->
-
-                                <!--Start Sidebar Single-->
-                                <div class="sidebar__single sidebar__popular-tags">
-                                    <div class="title-box">
-                                        <h2>Etiquetas Populares</h2>
-                                    </div>
-
-                                    <ul class="sidebar__popular-tags-list">
-                                        <li><a href="#">Alimentación</a></li>
-                                        <li><a href="#">Donaciones</a></li>
-                                        <li><a href="#">Niños</a></li>
-                                        <li><a href="#">Recaudación de Fondos</a></li>
-                                        <li><a href="#">Educación</a></li>
-                                        <li><a href="#">Salud</a></li>
-                                        <li><a href="#">Ayuda Humanitaria</a></li>
-                                        <li><a href="#">Comunidades Rurales</a></li>
-                                    </ul>
-                                </div>
-                                <!--End Sidebar Single-->
+ 
                             </div>
+
                         </div>
                     </div>
                     <!--End Sidebar-->

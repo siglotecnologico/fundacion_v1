@@ -5,7 +5,7 @@
             <div class="main-header-one__top-left">
                 <div class="logo-box-one">
                     <a href="{{ route('inicio') }}">
-                        <img src="assets/images/resources/logo210x70.png" alt="Fundacion Dios es Bueno" title="">
+                        <img src="{{ asset('assets/images/resources/logo210x70.png')}}" alt="Fundacion Dios es Bueno" title="">
                     </a>
                 </div>
             </div>

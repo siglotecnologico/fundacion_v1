@@ -52,7 +52,7 @@
                                 </div>
 
                                 <div class="btn-box">
-                                    <a class="thm-btn" href="{{ route('donaciones') }}">
+                                    <a class="thm-btn" href="{{ route('donations.create') }}">
                                         <span class="txt">Donar Ahora</span>
                                     </a>
                                 </div>
@@ -82,7 +82,7 @@
                                 </div>
 
                                 <div class="btn-box">
-                                    <a class="thm-btn" href="#">
+                                    <a class="thm-btn" href="{{ route('donations.create') }}">
                                         <span class="txt">Donar Ahora</span>
                                     </a>
                                 </div>
@@ -112,7 +112,7 @@
                                 </div>
 
                                 <div class="btn-box">
-                                    <a class="thm-btn" href="#">
+                                    <a class="thm-btn" href="{{ route('donations.create') }}">
                                         <span class="txt">Donar Ahora</span>
                                     </a>
                                 </div>
@@ -341,7 +341,7 @@
                                 <div class="inner">
                                     <div class="case-one__single-content-bg"
                                         style="background-image: url({{ asset('assets/images/shapes/case-v1-shape1.png')}});"></div>
-                                    <h2><a href="{{ route('donaciones') }}">Ayúdanos a tocar las vidas <br> de estos jóvenes</a></h2>
+                                    <h2><a href="{{ route('donations.create') }}">Ayúdanos a tocar las vidas <br> de estos jóvenes</a></h2>
                                     <p>Tu ayuda puede cambiar la vida de muchos <br> jóvenes en necesidad.</p>
                                 </div>
                                 <div class="case-one__progress">
@@ -382,7 +382,7 @@
                                 <div class="inner">
                                     <div class="case-one__single-content-bg"
                                         style="background-image: url({{ asset('assets/images/shapes/case-v1-shape1.png')}});"></div>
-                                    <h2><a href="{{ route('donaciones') }}">No más hambre <br> No dejemos a nadie atrás</a></h2>
+                                    <h2><a href="{{ route('donations.create') }}">No más hambre <br> No dejemos a nadie atrás</a></h2>
                                     <p>Juntos podemos erradicar el hambre y <br> brindar apoyo a los más necesitados.</p>
                                 </div>
                                 <div class="case-one__progress">
@@ -423,7 +423,7 @@
                                 <div class="inner">
                                     <div class="case-one__single-content-bg"
                                         style="background-image: url({{ asset('assets/images/shapes/case-v1-shape1.png')}});"></div>
-                                    <h2><a href="{{ route('donaciones') }}">Comparte tus bendiciones <br> con los niños</a></h2>
+                                    <h2><a href="{{ route('donations.create') }}">Comparte tus bendiciones <br> con los niños</a></h2>
                                     <p>Brinda salud y esperanza a los niños <br> necesitados.</p>
                                 </div>
                                 <div class="case-one__progress">
@@ -625,7 +625,7 @@
                                     </div>
 
                                     <div class="btn-box">
-                                        <a class="thm-btn" href="{{ route('donaciones') }}">
+                                        <a class="thm-btn" href="{{ route('donations.create') }}">
                                             <span class="txt">Donación Ahora</span>
                                         </a>
                                     </div>
@@ -687,7 +687,7 @@
                                 <div class="gallery-one__single-img">
                                     <img src="{{ asset('assets/images/gallery/gallery-v1-img1.jpg')}}" alt="#">
                                     <div class="text-box">
-                                        <h2><a href="{{ route('donaciones') }}">Recaudación de Fondos</a></h2>
+                                        <h2><a href="{{ route('donations.create') }}">Recaudación de Fondos</a></h2>
                                     </div>
                                 </div>
                             </div>
@@ -700,7 +700,7 @@
                                 <div class="gallery-one__single-img bg2">
                                     <img src="{{ asset('assets/images/gallery/gallery-v1-img2.jpg')}}" alt="#">
                                     <div class="text-box">
-                                        <h2><a href="{{ route('donaciones') }}">Alimentos Frescos</a></h2>
+                                        <h2><a href="{{ route('donations.create') }}">Alimentos Frescos</a></h2>
                                     </div>
                                 </div>
                             </div>
@@ -713,7 +713,7 @@
                                 <div class="gallery-one__single-img bg3">
                                     <img src="{{ asset('assets/images/gallery/gallery-v1-img3.jpg')}}" alt="#">
                                     <div class="text-box">
-                                        <h2><a href="{{ route('donaciones') }}">Educación</a></h2>
+                                        <h2><a href="{{ route('donations.create') }}">Educación</a></h2>
                                     </div>
                                 </div>
                             </div>
@@ -726,7 +726,7 @@
                                 <div class="gallery-one__single-img bg4">
                                     <img src="{{ asset('assets/images/gallery/gallery-v1-img4.jpg')}}" alt="#">
                                     <div class="text-box">
-                                        <h2><a href="{{ route('donaciones') }}">Médico</a></h2>
+                                        <h2><a href="{{ route('donations.create') }}">Médico</a></h2>
                                     </div>
                                 </div>
                             </div>

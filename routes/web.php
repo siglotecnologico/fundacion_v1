@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Formularios\ContactoController;
+use App\Http\Controllers\DonationController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -33,6 +34,14 @@ Route::get('unirse', function () {
     return view('unirse');
 })->name('unirse');
 
+Route::get('politicas', function () {
+    return view('donations.politicas');
+})->name('politicas');
+
+Route::get('faq', function () {
+    return view('donations.faq');
+})->name('faq');
+
 
 Route::middleware([
     'auth:sanctum',
@@ -51,3 +60,11 @@ Route::post('/formularioContactoinfo', [ContactoController::class, 'contactoinfo
 Route::post('/formulariosuscripcion', [ContactoController::class, 'suscripcion'])->name('suscripcion.store');
 Route::post('/formulariounirse', [ContactoController::class, 'unirse'])->name('unirse.store');
 Route::post('/formulariocontactoinfo', [ContactoController::class, 'contactoinfo'])->name('contactoinfo.store');
+
+
+//peyphone
+route::get('/donar', [DonationController::class, 'create'])->name('donations.create');
+
+route::post('/donar/mom', [DonationController::class, 'monto'])->name('donations.monto');
+
+Route::get('/thank-you', [DonationController::class, 'store'])->name('donations.thankyou');

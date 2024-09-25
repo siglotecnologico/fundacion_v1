@@ -23,17 +23,22 @@
                                     <li class="{{ request()->routeIs('contactos') ? 'current' : '' }}">
                                         <a href="{{ route('contactos') }}">Contacto</a>
                                     </li>
+                                    <li class="{{ request()->routeIs('faq') ? 'current' : '' }}">
+                                        <a href="{{ route('faq') }}">Preguntas Frecuentes</a>
+                                    </li>
+
+
                                 </ul>
                             </div>
                         </div>
 
                         <div class="main-header-one__bottom-right">
                             <div class="btn-box1">
-                                <a href="{{  route('unirse') }}">Únete </a>
+                                <a href="{{  route('donations.create') }}">Contribuir </a>
                             </div>
 
                             <div class="btn-box2">
-                                <a href="{{ route('contactos') }}">Voluntario</a>
+                                <a href="{{ route('unirse') }}">Voluntario</a>
                             </div>
                         </div>
                     </div>

@@ -1,9 +1,9 @@
 <!--Inicio del Footer One-->
 <footer class="footer-one">
     <div class="footer-one__bg" style="background-image: url(assets/images/pattern/footer-v1-bg.jpg);"></div>
-    <div class="shape1"><img src="assets/images/shapes/footer-v1-shape1.png" alt="#"></div>
-    <div class="shape2"><img src="assets/images/shapes/footer-v1-shape2.png" alt="#"></div>
-    <div class="shape3"><img src="assets/images/shapes/footer-v1-shape3.png" alt="#"></div>
+    <div class="shape1"><img src="{{ asset('assets/images/shapes/footer-v1-shape1.png')}}" alt="#"></div>
+    <div class="shape2"><img src="{{ asset('assets/images/shapes/footer-v1-shape2.png')}}" alt="#"></div>
+    <div class="shape3"><img src="{{ asset('assets/images/shapes/footer-v1-shape3.png')}}" alt="#"></div>
     <!--Inicio del Footer-->
     <div class="footer">
         <div class="container">
@@ -47,7 +47,7 @@
                         <div class="footer-widget__single">
                             <div class="footer-widget__single-about">
                                 <div class="logo-box">
-                                    <a href="#"><img src="assets/images/resources/3.png" width="60%" alt="#"></a>
+                                    <a href="#"><img src="{{ asset('assets/images/resources/3.png') }}" width="60%" alt="#"></a>
                                 </div>
                             </div>
                         </div>
